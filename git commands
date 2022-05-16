@@ -1,0 +1,133 @@
+yogender@tssys017:~$ ls
+Desktop  Documents  Downloads  examples.desktop  Music  Pictures  Public  snap  Templates  token.txt  ts  Videos  yogender  zoom
+yogender@tssys017:~$ mkdir yogi
+yogender@tssys017:~$ cd yogi
+yogender@tssys017:~/yogi$ ls
+yogender@tssys017:~/yogi$ git pull https://github.com/yogender77/may_02/tree/master/apr_28
+fatal: Not a git repository (or any of the parent directories): .git
+yogender@tssys017:~/yogi$ ls
+yogender@tssys017:~/yogi$ git pull https://github.com/yogender77/may_02.git
+fatal: Not a git repository (or any of the parent directories): .git
+yogender@tssys017:~/yogi$ git init
+Initialized empty Git repository in /home/yogender/yogi/.git/
+yogender@tssys017:~/yogi$ git pull https://github.com/yogender77/may_02.git
+remote: Enumerating objects: 91, done.
+remote: Counting objects: 100% (91/91), done.
+remote: Compressing objects: 100% (83/83), done.
+remote: Total 91 (delta 6), reused 91 (delta 6), pack-reused 0
+Unpacking objects: 100% (91/91), done.
+From https://github.com/yogender77/may_02
+ * branch            HEAD       -> FETCH_HEAD
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02
+yogender@tssys017:~/yogi$ git branch
+* master
+yogender@tssys017:~/yogi$ git branch yogi
+yogender@tssys017:~/yogi$ git branch
+* master
+  yogi
+yogender@tssys017:~/yogi$ git checkout yogi
+Switched to branch 'yogi'
+yogender@tssys017:~/yogi$ l
+apr_28/  apr_29/  may_02/
+yogender@tssys017:~/yogi$ git branch
+  master
+* yogi
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02
+yogender@tssys017:~/yogi$ git branch
+  master
+* yogi
+yogender@tssys017:~/yogi$ git checkout master
+Switched to branch 'master'
+yogender@tssys017:~/yogi$ git branch
+* master
+  yogi
+yogender@tssys017:~/yogi$ git branch -d yogi
+Deleted branch yogi (was 4b0a011).
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02
+yogender@tssys017:~/yogi$ git branch
+* master
+yogender@tssys017:~/yogi$ git merge
+fatal: No remote for the current branch.
+yogender@tssys017:~/yogi$ mkdir yogi1
+yogender@tssys017:~/yogi$ cd yogi1
+yogender@tssys017:~/yogi/yogi1$ ls
+yogender@tssys017:~/yogi/yogi1$ vi file.txt
+yogender@tssys017:~/yogi/yogi1$ ls
+file.txt
+yogender@tssys017:~/yogi/yogi1$ git merge
+fatal: No remote for the current branch.
+yogender@tssys017:~/yogi/yogi1$ git merge https://github.com/yogender77/may_02.git
+merge: https://github.com/yogender77/may_02.git - not something we can merge
+yogender@tssys017:~/yogi/yogi1$ ls
+file.txt
+yogender@tssys017:~/yogi/yogi1$ cd ..
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02  yogi1
+yogender@tssys017:~/yogi$ cd ..
+yogender@tssys017:~$ mkdir yogi1
+yogender@tssys017:~$ cd yogi1
+yogender@tssys017:~/yogi1$ ls
+yogender@tssys017:~/yogi1$ vi file.txt
+yogender@tssys017:~/yogi1$ ls
+file.txt
+yogender@tssys017:~/yogi1$ git merge https://github.com/yogender77/may_02.git
+fatal: Not a git repository (or any of the parent directories): .git
+yogender@tssys017:~/yogi1$ git merge https://github.com/yogender77/may_02/tree/master/apr_28
+fatal: Not a git repository (or any of the parent directories): .git
+yogender@tssys017:~/yogi1$ cd ..
+yogender@tssys017:~$ cd yogi
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02  yogi1
+yogender@tssys017:~/yogi$ cd apr_28
+yogender@tssys017:~/yogi/apr_28$ ls
+ll  operator_precedence  preprocessor_macros
+yogender@tssys017:~/yogi/apr_28$ git merge https://github.com/yogender77/may_02.git
+merge: https://github.com/yogender77/may_02.git - not something we can merge
+yogender@tssys017:~/yogi/apr_28$ ls
+ll  operator_precedence  preprocessor_macros
+yogender@tssys017:~/yogi/apr_28$ ls
+ll  operator_precedence  preprocessor_macros
+yogender@tssys017:~/yogi/apr_28$ cd ..
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02  yogi1
+yogender@tssys017:~/yogi$ cd may_02
+yogender@tssys017:~/yogi/may_02$ ls
+a.out  capital_letter.c  copy_array.c  dec_bin.c  fact.c  fibanocci.c  palindrome.c  reverse.c
+yogender@tssys017:~/yogi/may_02$ cd ..
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02  yogi1
+yogender@tssys017:~/yogi$ cd apr_28
+yogender@tssys017:~/yogi/apr_28$ git merge https://github.com/yogender77/may_02/tree/master/apr_29
+merge: https://github.com/yogender77/may_02/tree/master/apr_29 - not something we can merge
+yogender@tssys017:~/yogi/apr_28$ ls
+ll  operator_precedence  preprocessor_macros
+yogender@tssys017:~/yogi/apr_28$ cd ..
+yogender@tssys017:~/yogi$ git branch
+* master
+yogender@tssys017:~/yogi$ git branch yogi
+yogender@tssys017:~/yogi$ git branch
+* master
+  yogi
+yogender@tssys017:~/yogi$ git checkout yogi
+Switched to branch 'yogi'
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02  yogi1
+yogender@tssys017:~/yogi$ git checkout master
+Switched to branch 'master'
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  may_02  yogi1
+yogender@tssys017:~/yogi$ vi file.txt
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  file.txt  may_02  yogi1
+yogender@tssys017:~/yogi$ git checkout yogi
+Switched to branch 'yogi'
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  file.txt  may_02  yogi1
+yogender@tssys017:~/yogi$ git branch yogender
+yogender@tssys017:~/yogi$ git checkout yogender
+Switched to branch 'yogender'
+yogender@tssys017:~/yogi$ ls
+apr_28  apr_29  file.txt  may_02  yogi1
